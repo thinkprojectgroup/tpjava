@@ -9,6 +9,6 @@ package thinkproject.rest;
  *
  * @author joost.meulenkamp
  */
-public class DocumentFieldDefinition {
+public class DocumentFieldDefinition extends Resource {
     
 }

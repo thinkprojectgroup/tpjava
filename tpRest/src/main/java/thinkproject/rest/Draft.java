@@ -9,6 +9,6 @@ package thinkproject.rest;
  *
  * @author joost.meulenkamp
  */
-public class Draft {
+public class Draft extends Resource {
     
 }

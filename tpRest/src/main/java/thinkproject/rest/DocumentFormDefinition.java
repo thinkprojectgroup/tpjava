@@ -9,6 +9,6 @@ package thinkproject.rest;
  *
  * @author joost.meulenkamp
  */
-public class DocumentFormDefinition {
+public class DocumentFormDefinition extends Resource {
     
 }

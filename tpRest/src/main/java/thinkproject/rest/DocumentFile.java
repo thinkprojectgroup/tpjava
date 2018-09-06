@@ -9,6 +9,6 @@ package thinkproject.rest;
  *
  * @author joost.meulenkamp
  */
-public class DocumentFile {
+public class DocumentFile extends Resource {
     
 }

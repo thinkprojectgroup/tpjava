@@ -46,6 +46,10 @@ public class RestClient {
         return executeRequest(path, method, file);
     }
 
+    public String executeRequest(String path, RestClient.Method method) {
+        return executeRequest(path, method, null);
+    }
+
     public String executeRequest(String path, RestClient.Method method, String body) {
         return executeRequest(path, method, (Object) body);
     }
@@ -92,7 +96,9 @@ public class RestClient {
 
             int responseCode = connection.getResponseCode();
             if (responseCode != HttpURLConnection.HTTP_OK) {
-                return connection.getResponseCode() + "";
+                //create log entry
+                System.out.println(connection.getResponseCode() + " " + connection.getResponseMessage());
+                return null;
             }
 
             StringBuilder response = new StringBuilder();
